@@ -1,0 +1,42 @@
+# =========================================
+# Secrets and credentials (most important)
+# =========================================
+*.pem
+*.ppk
+*.key
+.env
+.env.*
+!.env.example
+credentials
+config.json.local
+.aws/
+*.csv
+# Exception: allow CSV files you do want to version (example)
+# !resources/**/sample-data.csv
+
+# =========================================
+# Infrastructure as code (Terraform, etc.)
+# =========================================
+*.tfstate
+*.tfstate.*
+.terraform/
+*.tfvars
+
+# =========================================
+# Operating system
+# =========================================
+.DS_Store
+Thumbs.db
+desktop.ini
+*.sh
+# =========================================
+# Editors and IDEs
+# =========================================
+.vscode/
+.idea/
+.claude/
+.codex
+*.swp
+*.swo
+
+# =========================================
