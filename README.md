@@ -51,7 +51,35 @@ Algunos laboratorios crean recursos de AWS (por ejemplo instancias EC2, almacena
 - Revisa periódicamente tu panel de facturación.
 
 
+## Warning: credentials
 
+**Never upload credentials or secrets to any repository**:
+
+- Access keys and secret keys (including the CSV file downloaded from IAM)
+- Key pair files (`.pem`, `.ppk`)
+- `.env` files and any file with passwords or tokens
+- Screenshots showing your AWS account ID, email, keys or public IP addresses
+
+If you ever expose a key by mistake, deactivate or rotate it in IAM immediately. Deleting the file from the repository is **not** enough, because Git keeps the history.
+
+
+**Nunca subas credenciales o secretos a cualquier repositorio**:
+
+- Claves de acceso y claves secretas (incluido el archivo CSV descargado de IAM)
+- Archivos de pares de claves (`.pem`, `.ppk`)
+- Archivos `.env` y cualquier archivo que contenga contraseñas o tokens
+- Capturas de pantalla que muestren el ID de tu cuenta de AWS, correo electrónico, claves o direcciones IP públicas
+
+>**Nota:**
+    - If you ever expose a key by mistake, deactivate or change  it in IAM immediately. Deleting the file from the repository is not enough, because Git keeps the history.
+    - Si alguna vez expones una clave por error, desactívala o cambiala de inmediato en IAM. Eliminar el archivo del repositorio no es suficiente, ya que Git conserva el historial.
+
+## Contributing
+
+- Corrections and suggestions are welcome through issues and pull requests. Write content in your own words and link to the official AWS documentation instead of copying it.
+
+
+- Las correcciones y sugerencias son bienvenidas mediante issues y pull requests. Escribe el contenido con tus propias palabras y enlaza a la documentación oficial de AWS en lugar de copiarla.
 
 ## License
 

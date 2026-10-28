@@ -10,7 +10,8 @@ Base de conocimiento abierta sobre Amazon Web Services (AWS): guías de servicio
 
 | Sección | Descripción | Estado |
 |---|---|---|
-| [fundamentos](fundamentos/) | Conceptos generales de la nube y de AWS: regiones, responsabilidad compartida, facturación, glosario | En construcción |
+| [fundamentos - Conceptos básicos](01-fundamentos/01-conceptos-basicos.md) | Conceptos generales de la nube y de AWS: regiones, responsabilidad compartida, facturación, glosario | Hecho |
+| [fundamentos - Modelos de servicios de computación en la nube](01-fundamentos/02-modelos-servicios-de-computacion-en-nube.md) | Conceptos generales de la nube y de AWS: regiones, responsabilidad compartida, facturación, glosario | En construcción |
 | servicios | Guías de referencia de cada servicio de AWS (IAM, CodeCommit, EC2 y más) | Próximamente |
 | prácticas | Proyectos completos paso a paso que combinan varios servicios | Próximamente |
 | charlas | Material preparado para charlas y talleres | Próximamente |
