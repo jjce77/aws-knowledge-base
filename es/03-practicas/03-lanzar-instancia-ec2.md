@@ -182,5 +182,4 @@ Una instancia encendida consume horas o créditos de tu cuenta, aunque no la use
 6. Revisa el panel de facturación para confirmar que no quedan recursos activos.
 
 ## Siguiente paso
-
-Preparar la instancia: instalar Node.js y Git, configurar el acceso a CodeCommit y descargar la aplicación.
+[04-deploy-app-EC2.md](04-deploy-app-EC2.md) Preparar la instancia: instalar Node.js y Git, configurar el acceso a CodeCommit y descargar la aplicación.

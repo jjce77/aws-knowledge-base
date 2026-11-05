@@ -37,6 +37,12 @@ git config user.name "Tu Nombre"
 git config user.email "tu@correo.com"
 ```
 
+Crea la rama `dev` y trabaja en ella (no en `master`):
+
+```bash
+git checkout -b dev
+```
+
 ## 5. Archivos, primeros commits y push
 
 **.gitignore**
@@ -97,7 +103,28 @@ cat > data/players.json << 'EOF'
 EOF
 
 cat > data/teams.json << 'EOF'
-[{"id": "mil", "name": "Millonarios", "city": "Bogotá", "shield": null, "championships_won": 16}]
+[
+  { "id": "nal", "name": "Atlético Nacional", "city": "Medellín", "shield": null, "championships_won": 18 },
+  { "id": "mil", "name": "Millonarios", "city": "Bogotá", "shield": null, "championships_won": 16 },
+  { "id": "ame", "name": "América de Cali", "city": "Cali", "shield": null, "championships_won": 15 },
+  { "id": "jun", "name": "Junior", "city": "Barranquilla", "shield": null, "championships_won": 11 },
+  { "id": "sfe", "name": "Independiente Santa Fe", "city": "Bogotá", "shield": null, "championships_won": 10 },
+  { "id": "cal", "name": "Deportivo Cali", "city": "Cali", "shield": null, "championships_won": 10 },
+  { "id": "dim", "name": "Independiente Medellín", "city": "Medellín", "shield": null, "championships_won": 6 },
+  { "id": "occ", "name": "Once Caldas", "city": "Manizales", "shield": null, "championships_won": 4 },
+  { "id": "tol", "name": "Deportes Tolima", "city": "Ibagué", "shield": null, "championships_won": 3 },
+  { "id": "per", "name": "Deportivo Pereira", "city": "Pereira", "shield": null, "championships_won": 1 },
+  { "id": "cuc", "name": "Cúcuta Deportivo", "city": "Cúcuta", "shield": null, "championships_won": 1 },
+  { "id": "chi", "name": "Boyacá Chicó", "city": "Tunja", "shield": null, "championships_won": 1 },
+  { "id": "pas", "name": "Deportivo Pasto", "city": "Pasto", "shield": null, "championships_won": 1 },
+  { "id": "buc", "name": "Atlético Bucaramanga", "city": "Bucaramanga", "shield": null, "championships_won": 1 },
+  { "id": "agu", "name": "Águilas Doradas", "city": "Rionegro", "shield": null, "championships_won": 0 },
+  { "id": "ali", "name": "Alianza FC", "city": "Valledupar", "shield": null, "championships_won": 0 },
+  { "id": "for", "name": "Fortaleza CEIF", "city": "Bogotá", "shield": null, "championships_won": 0 },
+  { "id": "itb", "name": "Internacional de Bogotá", "city": "Bogotá", "shield": null, "championships_won": 0 },
+  { "id": "jag", "name": "Jaguares de Córdoba", "city": "Montería", "shield": null, "championships_won": 0 },
+  { "id": "lla", "name": "Llaneros", "city": "Villavicencio", "shield": null, "championships_won": 0 }
+]
 EOF
 
 
@@ -109,9 +136,9 @@ git commit -m "feat(data): add seed data for players and teams"
 
 Subir a repositorio
 ```bash
-git push -u origin master
+git push -u origin dev
 ```
-Después del push, los archivos aparecerán en la consola de CodeCommit.
+Después del push, en la consola de CodeCommit aparecerá la rama `dev` con los archivos.
 
 ---
 

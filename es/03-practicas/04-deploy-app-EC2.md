@@ -54,8 +54,10 @@ Debes ver un número de versión en cada uno. Si `git` no responde, instálalo c
 
 ```bash
 cd ~
-git clone https://git-codecommit.REGION.amazonaws.com/v1/repos/NOMBRE-DEL-REPOSITORIO
+git clone -b dev https://git-codecommit.REGION.amazonaws.com/v1/repos/NOMBRE-DEL-REPOSITORIO
 ```
+
+La opción `-b dev` descarga la rama `dev`, donde se subió el código.
 
 3. Git pide **Username** y **Password**. Usa las credenciales HTTPS de Git que generaste en IAM ([00-iam-credential_codecommit.md](00-iam-credential_codecommit.md)), no la contraseña de la consola. Al pegar la contraseña no se ve nada en pantalla.
 4. Entra a la carpeta y comprueba el contenido:
