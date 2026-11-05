@@ -80,18 +80,7 @@ La primera versión rara vez queda perfecta. Pide los ajustes con frases cortas,
 - "Muestra un mensaje cuando no hay jugadores."
 - "El botón de eliminar debe pedir confirmación."
 
-### 5. Probar en tu computador
-
-En la terminal, dentro de la carpeta del proyecto:
-
-```bash
-npm install
-node app.js
-```
-
-Abre `http://localhost:3000` y prueba crear, ver, editar y eliminar un jugador. Detén la app con **Ctrl + C**.
-
-### 6. Hacer commits mientras avanzas
+### 5. Hacer commits mientras avanzas
 
 Kiro trabaja por tareas (tasks). Cada vez que Kiro y tú terminen una tarea y la app siga funcionando, guarda ese avance con un commit:
 
@@ -102,7 +91,7 @@ git commit -m "feat: descripción corta de lo que se hizo"
 
 Por ejemplo: `feat: agrega el listado de jugadores` o `feat: agrega el formulario para crear jugadores`. Así, si algo sale mal, puedes volver al último avance que funcionaba.
 
-### 7. Subir todo a la rama dev
+### 6. Subir todo a la rama dev
 
 Cuando hayas terminado todas las tareas y probado la app, sube los commits a CodeCommit:
 
